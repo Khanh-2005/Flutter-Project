@@ -36,7 +36,7 @@ class _RootAppState extends State<RootApp> {
       index: pageIndex,
       children: [
         DailyPage(),
-        // StatsPage(),
+        StatsPage(),
         Center(child: Text("Budget Page")),
         Center(child: Text("Profile Page")),
         Center(child: Text("Create Budget Page")),
