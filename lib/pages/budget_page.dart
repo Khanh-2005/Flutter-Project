@@ -3,6 +3,7 @@ import 'package:flutter_helloapp/json/budget_json.dart';
 import 'package:flutter_helloapp/theme/colors.dart';
 import 'package:flutter_helloapp/json/day_month.dart';
 
+// ignore: use_key_in_widget_constructors
 class BudgetPage extends StatefulWidget {
   @override
   State<BudgetPage> createState() => _BudgetPageState();
@@ -12,6 +13,7 @@ class _BudgetPageState extends State<BudgetPage> {
   int activeMonth = 4;
   @override
   Widget build(BuildContext context) {
+    // ignore: deprecated_member_use
     return Scaffold(backgroundColor: grey.withOpacity(0.05), body: getBody());
   }
 
@@ -26,6 +28,7 @@ class _BudgetPageState extends State<BudgetPage> {
               color: white,
               boxShadow: [
                 BoxShadow(
+                  // ignore: deprecated_member_use
                   color: grey.withOpacity(0.01),
                   spreadRadius: 10,
                   blurRadius: 3,
@@ -47,7 +50,7 @@ class _BudgetPageState extends State<BudgetPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Stats",
+                        "Budget",
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -76,6 +79,7 @@ class _BudgetPageState extends State<BudgetPage> {
                             activeMonth = index;
                           });
                         },
+                        // ignore: sized_box_for_whitespace
                         child: Container(
                           width: (MediaQuery.of(context).size.width - 40) / 6,
                           child: Column(
@@ -94,6 +98,7 @@ class _BudgetPageState extends State<BudgetPage> {
                                   border: Border.all(
                                     color: activeMonth == index
                                         ? primary
+                                        // ignore: deprecated_member_use
                                         : black.withOpacity(0.1),
                                   ),
                                 ),
@@ -139,6 +144,7 @@ class _BudgetPageState extends State<BudgetPage> {
                     borderRadius: BorderRadius.circular(12),
                     boxShadow: [
                       BoxShadow(
+                        // ignore: deprecated_member_use
                         color: grey.withOpacity(0.01),
                         spreadRadius: 10,
                         blurRadius: 3,
@@ -208,6 +214,7 @@ class _BudgetPageState extends State<BudgetPage> {
                               width: size.width - 40,
                               height: 4,
                               decoration: BoxDecoration(
+                                // ignore: deprecated_member_use
                                 color: primary.withOpacity(0.1),
                                 borderRadius: BorderRadius.circular(5),
                               ),

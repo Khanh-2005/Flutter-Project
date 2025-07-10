@@ -3,8 +3,10 @@ import 'package:flutter_helloapp/json/daily_json.dart';
 import 'package:flutter_helloapp/theme/colors.dart';
 import 'package:flutter_helloapp/json/day_month.dart';
 
+// ignore: use_key_in_widget_constructors
 class DailyPage extends StatefulWidget {
   @override
+  // ignore: library_private_types_in_public_api
   _DailyPageState createState() => _DailyPageState();
 }
 
@@ -12,6 +14,7 @@ class _DailyPageState extends State<DailyPage> {
   int activeDay = 3;
   @override
   Widget build(BuildContext context) {
+    // ignore: deprecated_member_use
     return Scaffold(backgroundColor: grey.withOpacity(0.05), body: getBody());
   }
 
@@ -25,6 +28,7 @@ class _DailyPageState extends State<DailyPage> {
               color: white,
               boxShadow: [
                 BoxShadow(
+                  // ignore: deprecated_member_use
                   color: grey.withOpacity(0.01),
                   spreadRadius: 10,
                   blurRadius: 3,
@@ -68,6 +72,7 @@ class _DailyPageState extends State<DailyPage> {
                             activeDay = index;
                           });
                         },
+                        // ignore: sized_box_for_whitespace
                         child: Container(
                           width: (MediaQuery.of(context).size.width - 40) / 7,
                           child: Column(
@@ -88,6 +93,7 @@ class _DailyPageState extends State<DailyPage> {
                                   border: Border.all(
                                     color: activeDay == index
                                         ? primary
+                                        // ignore: deprecated_member_use
                                         : black.withOpacity(0.1),
                                   ),
                                 ),
@@ -122,7 +128,7 @@ class _DailyPageState extends State<DailyPage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Container(
+                        SizedBox(
                           width: (size.width - 40) * 0.7,
                           child: Row(
                             children: [
@@ -132,6 +138,7 @@ class _DailyPageState extends State<DailyPage> {
                                 height: 50,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
+                                  // ignore: deprecated_member_use
                                   color: grey.withOpacity(0.1),
                                 ),
                                 child: Center(
@@ -145,6 +152,7 @@ class _DailyPageState extends State<DailyPage> {
                               SizedBox(width: 15),
 
                               // Name + Date
+                              // ignore: sized_box_for_whitespace
                               Container(
                                 width: (size.width - 90) * 0.5,
                                 child: Column(
@@ -165,6 +173,7 @@ class _DailyPageState extends State<DailyPage> {
                                       daily[index]['date'],
                                       style: TextStyle(
                                         fontSize: 12,
+                                        // ignore: deprecated_member_use
                                         color: black.withOpacity(0.5),
                                         fontWeight: FontWeight.w400,
                                       ),
@@ -178,6 +187,7 @@ class _DailyPageState extends State<DailyPage> {
                         ),
 
                         // Price
+                        // ignore: sized_box_for_whitespace
                         Container(
                           width: (size.width - 40) * 0.3,
                           child: Row(
@@ -217,6 +227,7 @@ class _DailyPageState extends State<DailyPage> {
                     "Total",
                     style: TextStyle(
                       fontSize: 16,
+                      // ignore: deprecated_member_use
                       color: black.withOpacity(0.4),
                       fontWeight: FontWeight.w600,
                     ),

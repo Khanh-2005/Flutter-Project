@@ -2,18 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:flutter_helloapp/theme/colors.dart';
 import 'package:flutter_helloapp/json/create_budget_json.dart';
 
+// ignore: use_key_in_widget_constructors
 class CreateBudgetPage extends StatefulWidget {
   @override
+  // ignore: library_private_types_in_public_api
   _CreateBudgetPageState createState() => _CreateBudgetPageState();
 }
 
 class _CreateBudgetPageState extends State<CreateBudgetPage> {
   int activeCategory = 0;
+  // ignore: prefer_final_fields
   TextEditingController _budgetName = TextEditingController(text: "Shopping");
+  // ignore: prefer_final_fields
   TextEditingController _budgetCost = TextEditingController(text: "\$780.00");
 
   @override
   Widget build(BuildContext context) {
+    // ignore: deprecated_member_use
     return Scaffold(backgroundColor: grey.withOpacity(0.05), body: getBody());
   }
 
@@ -28,6 +33,7 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
               color: white,
               boxShadow: [
                 BoxShadow(
+                  // ignore: deprecated_member_use
                   color: grey.withOpacity(0.01),
                   spreadRadius: 10,
                   blurRadius: 3,
@@ -73,6 +79,7 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
               style: TextStyle(
                 fontSize: 17,
                 fontWeight: FontWeight.bold,
+                // ignore: deprecated_member_use
                 color: black.withOpacity(0.5),
               ),
             ),
@@ -106,6 +113,7 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
                         borderRadius: BorderRadius.circular(12),
                         boxShadow: [
                           BoxShadow(
+                            // ignore: deprecated_member_use
                             color: grey.withOpacity(0.01),
                             spreadRadius: 10,
                             blurRadius: 3,
@@ -128,6 +136,7 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
                               height: 40,
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
+                                // ignore: deprecated_member_use
                                 color: grey.withOpacity(0.15),
                               ),
                               child: Center(
@@ -169,6 +178,7 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w500,
+                    // ignore: deprecated_member_use
                     color: black.withOpacity(0.6),
                   ),
                 ),
@@ -190,6 +200,7 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    // ignore: sized_box_for_whitespace
                     Container(
                       width: size.width - 140,
                       child: Column(
@@ -200,6 +211,7 @@ class _CreateBudgetPageState extends State<CreateBudgetPage> {
                             style: TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w500,
+                              // ignore: deprecated_member_use
                               color: black.withOpacity(0.6),
                             ),
                           ),

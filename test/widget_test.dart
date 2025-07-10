@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_helloapp/pages/root_app.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+// ignore: unused_import
 import 'package:flutter_helloapp/main.dart';
 
 void main() {

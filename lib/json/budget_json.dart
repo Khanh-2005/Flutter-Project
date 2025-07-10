@@ -1,5 +1,6 @@
 import 'package:flutter_helloapp/theme/colors.dart';
 
+// ignore: constant_identifier_names
 const List budget_json = [
   {
     "name": "Gift",

@@ -1,13 +1,13 @@
-import 'dart:math';
-
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_helloapp/theme/colors.dart';
 import 'package:flutter_helloapp/json/day_month.dart';
 import 'package:flutter_helloapp/widget/chart.dart';
 
+// ignore: use_key_in_widget_constructors
 class StatsPage extends StatefulWidget {
   @override
+  // ignore: library_private_types_in_public_api
   _StatsPageState createState() => _StatsPageState();
 }
 
@@ -15,6 +15,7 @@ class _StatsPageState extends State<StatsPage> {
   int activeMonth = 4;
   @override
   Widget build(BuildContext context) {
+    // ignore: deprecated_member_use
     return Scaffold(backgroundColor: grey.withOpacity(0.05), body: getBody());
   }
 
@@ -44,6 +45,7 @@ class _StatsPageState extends State<StatsPage> {
               color: white,
               boxShadow: [
                 BoxShadow(
+                  // ignore: deprecated_member_use
                   color: grey.withOpacity(0.01),
                   spreadRadius: 10,
                   blurRadius: 3,
@@ -88,6 +90,7 @@ class _StatsPageState extends State<StatsPage> {
                             activeMonth = index;
                           });
                         },
+                        // ignore: sized_box_for_whitespace
                         child: Container(
                           width: (MediaQuery.of(context).size.width - 40) / 6,
                           child: Column(
@@ -106,6 +109,7 @@ class _StatsPageState extends State<StatsPage> {
                                   border: Border.all(
                                     color: activeMonth == index
                                         ? primary
+                                        // ignore: deprecated_member_use
                                         : black.withOpacity(0.1),
                                   ),
                                 ),
@@ -151,6 +155,7 @@ class _StatsPageState extends State<StatsPage> {
                 borderRadius: BorderRadius.circular(12),
                 boxShadow: [
                   BoxShadow(
+                    // ignore: deprecated_member_use
                     color: grey.withOpacity(0.01),
                     spreadRadius: 10,
                     blurRadius: 3,
@@ -172,6 +177,7 @@ class _StatsPageState extends State<StatsPage> {
                             style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 13,
+                              // ignore: deprecated_member_use
                               color: black.withOpacity(0.5),
                             ),
                           ),
@@ -189,6 +195,7 @@ class _StatsPageState extends State<StatsPage> {
                     ),
                     Positioned(
                       bottom: 0,
+                      // ignore: sized_box_for_whitespace
                       child: Container(
                         width: size.width - 20,
                         height: 150,
@@ -213,6 +220,7 @@ class _StatsPageState extends State<StatsPage> {
                   borderRadius: BorderRadius.circular(12),
                   boxShadow: [
                     BoxShadow(
+                      // ignore: deprecated_member_use
                       color: grey.withOpacity(0.01),
                       spreadRadius: 10,
                       blurRadius: 3,
@@ -253,6 +261,7 @@ class _StatsPageState extends State<StatsPage> {
                             style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 13,
+                              // ignore: deprecated_member_use
                               color: black.withOpacity(0.5),
                             ),
                           ),

@@ -10,8 +10,10 @@ import 'package:ionicons/ionicons.dart';
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter_helloapp/theme/colors.dart';
 
+// ignore: use_key_in_widget_constructors
 class RootApp extends StatefulWidget {
   @override
+  // ignore: library_private_types_in_public_api
   _RootAppState createState() => _RootAppState();
 }
 
@@ -27,6 +29,7 @@ class _RootAppState extends State<RootApp> {
         onPressed: () {
           setTabs(4);
         },
+        // ignore: sort_child_properties_last
         child: Icon(Icons.add, size: 25, color: Colors.white),
         backgroundColor: primary,
       ),
@@ -41,7 +44,7 @@ class _RootAppState extends State<RootApp> {
         DailyPage(),
         StatsPage(),
         BudgetPage(),
-        Center(child: Text("Profile Page")),
+        ProfilePage(),
         CreateBudgetPage(),
       ],
     );
@@ -58,6 +61,7 @@ class _RootAppState extends State<RootApp> {
       icons: iconItems,
       activeColor: primary,
       splashColor: secondary,
+      // ignore: deprecated_member_use
       inactiveColor: black.withOpacity(0.5),
       activeIndex: pageIndex,
       gapLocation: GapLocation.center,
