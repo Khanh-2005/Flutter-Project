@@ -29,7 +29,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.helloapp"
+        applicationId = "com.example.trackerapp"
         minSdk = 21
         targetSdk = 33
         versionCode = 1
