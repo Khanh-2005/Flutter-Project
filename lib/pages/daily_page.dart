@@ -228,7 +228,7 @@ class _DailyPageState extends State<DailyPage> {
                 Padding(
                   padding: const EdgeInsets.only(top: 5),
                   child: Text(
-                    "\$1780.00",
+                    "\$3544.00",
                     style: TextStyle(
                       fontSize: 20,
                       color: black,
