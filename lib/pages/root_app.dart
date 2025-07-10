@@ -1,10 +1,11 @@
 // ignore_for_file: depend_on_referenced_packages
 
 import 'package:flutter/material.dart';
-import 'package:flutter_helloapp/pages/profile_page.dart';
-import 'package:flutter_helloapp/pages/create_budget_page.dart';
 import 'package:flutter_helloapp/pages/daily_page.dart';
 import 'package:flutter_helloapp/pages/stats_page.dart';
+import 'package:flutter_helloapp/pages/create_budget_page.dart';
+import 'package:flutter_helloapp/pages/budget_page.dart';
+import 'package:flutter_helloapp/pages/profile_page.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter_helloapp/theme/colors.dart';
@@ -39,8 +40,7 @@ class _RootAppState extends State<RootApp> {
       children: [
         DailyPage(),
         StatsPage(),
-
-        Center(child: Text("Budget Page")),
+        BudgetPage(),
         Center(child: Text("Profile Page")),
         CreateBudgetPage(),
       ],
